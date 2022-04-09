@@ -1,0 +1,29 @@
+{
+	"name": "quiz",
+	"version": "1.0.0",
+	"description": "Exemplo de Quiz, utilizando DDD",
+	"main": "index.js",
+	"scripts": {
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/wandersonsangreal/quiz.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/wandersonsangreal/quiz/issues"
+	},
+	"homepage": "https://github.com/wandersonsangreal/quiz#readme",
+	"dependencies": {
+		"ts-node": "^10.7.0",
+		"typescript": "^4.6.3"
+	},
+	"devDependencies": {
+		"jest": "^27.5.1",
+		"ts-jest": "^27.1.4",
+		"@types/jest": "^27.4.1"
+	}
+}
