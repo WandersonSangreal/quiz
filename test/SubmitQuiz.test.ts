@@ -12,12 +12,12 @@ test("Um usuário deve poder submeter um quiz", async () => {
         idQuiz: 1,
         answers: {
             1: "a",
-            2: "a"
+            2: "b"
         }
     }
 
     const output = await submitQuiz.execute(input);
 
-    expect(output.score).toBe(100);
+    expect(output.score).toBe(50);
 
 });

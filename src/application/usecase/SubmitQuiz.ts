@@ -10,9 +10,17 @@ export default class SubmitQuiz {
 
         const quiz = await this.quizRepository.get(input.idQuiz);
 
-        return {
-            score: 100
+        let score = 0;
+
+        for (const question of quiz.questions) {
+            if (input.answers[question.id] === question.correctAnswer) {
+                score++;
+            }
         }
+
+        score = (score / quiz.questions.length) * 100;
+
+        return { score };
 
     }
 
